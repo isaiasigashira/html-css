@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: #00800033;
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+            color: #01720175;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: green;
+        }
+
+        a::before{
+            content: '⇨';
+            font-weight: bold;
+        }
+
+        a::after{
+            content: '⇦';
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="verde">
+        <h1>Página Verde</h1>
+    </div>
+    <p>Você agora está na área verde; Você acessou clicando no primeiro link da página principal.</p>
+    <ul>
+        <li><a href="/">Voltar para a área cinza</a></li>
+        <li><a href="./amarela.html">Acessar a área amarela</a></li>
+    </ul>
+</body>
+</html>

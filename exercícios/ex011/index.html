@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 715px)" srcset="images/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/fotom.png" type="image/png">
+        <img src="./images/fotog.png" alt="imagem flexível">
+    </picture>
+
+    <!-- <h2>O Mar</h2>
+    <p>Abaixo, há uma mar com imagem dinâmica que eu fiz sozinho!</p>
+
+    <picture>
+        <source media="(max-width: 715px)" srcset="./images/mar-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="./images/mar-m.jpg" type="image/jpg">
+        <img src="./images/mar-g.jpg" alt="mar flexível">
+    </picture> -->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!-- <audio src="midia/Jimmy Eat World - Pain(MP3_160K).mp3" controls autoplay></audio> -->
+
+    <audio preload="metadata" controls>
+        <source src="midia/Jimmy Eat World - Pain(MP3_160K).mp3" type="audio/mpeg">
+        <source src="midia/Jimmy Eat World - Pain(MP3_160K).ogg" type="audio/ogg">
+        <source src="midia/Jimmy Eat World - Pain(MP3_160K).wav" type="audio/wav">
+        <p>Infelizmente, seu navegar não consegue reproduzir áudio. <a href="midia/Jimmy Eat World - Pain(MP3_160K).mp3">Clique aqui para baixar.</a></p>
+    </audio>
+</body>
+</html>
